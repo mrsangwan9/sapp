@@ -27,7 +27,7 @@ def signup(request):
                 continue
         fm = User.objects.create_user(username, pass1, pass2)
         fm.save()
-        return HttpResponse("account created ")q
+        return HttpResponse("account created ")
     else:
         fm = UserCreationForm()
 
